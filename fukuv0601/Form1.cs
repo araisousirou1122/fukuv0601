@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic.Devices;
 using System.Diagnostics.Eventing.Reader;
 
 namespace fukuv0601
@@ -23,14 +24,14 @@ namespace fukuv0601
         private void button1_Click(object sender, EventArgs e)
         {
             vx = -10;
-            label1.Text = "こんなのもう死ぬしかないじゃない";　　　　　　　　　　　//ラベルが左に行くよ。
+            label1.Text = "(.∀.)";　　　　　　　　　　　//ラベルが左に行くよ。
             label1.ForeColor = Color.Red;　　　　　　　　　//テキストが変わるよ。色赤になるよ
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             vx = 10;
-            label1.Text = "僕と契約して魔法少女になってよ";　　　　　　//ラベルが右に行くよ。
+            label1.Text = "(>Ａ<)";　　　　　　//ラベルが右に行くよ。
             label1.ForeColor = Color.Green;　　　　　//テキストが変わるよ。色緑になるよ
         }
 
@@ -57,7 +58,14 @@ namespace fukuv0601
             if (label1.Top > 433)
             {
                 vy = -10;
+                vx = Math.Abs(vx + (vx / 10));
             }
+
+            else if (label1.Bottom > ClientSize.Width)
+            {
+                ;
+            }
+
 
             string t = label1.Text;
             label1.Text = chr;
@@ -74,6 +82,20 @@ namespace fukuv0601
             timer1.Enabled = false;　　　　　　　　　　//timer止まるよテキスト自分の名前
             label1.Text = "お前の母ちゃんでべそ";
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            //vx = Math.Abs(vx+(vx / 10)) ;
+            //vx = Math.Abs(vx - (vx/10));
+            timer1.Interval += -10;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            timer1.Interval += 10;
+        }
+        
     }
 }
 

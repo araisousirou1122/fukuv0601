@@ -33,6 +33,8 @@
             timer1 = new System.Windows.Forms.Timer(components);
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -52,29 +54,51 @@
             // 
             // button1
             // 
-            button1.Location = new Point(594, 419);
+            button1.Location = new Point(661, 396);
             button1.Name = "button1";
-            button1.Size = new Size(72, 29);
+            button1.Size = new Size(67, 23);
             button1.TabIndex = 6;
-            button1.Text = "button1";
+            button1.Text = "左";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(692, 419);
+            button2.Location = new Point(661, 425);
             button2.Name = "button2";
-            button2.Size = new Size(60, 29);
+            button2.Size = new Size(67, 28);
             button2.TabIndex = 7;
-            button2.Text = "button2";
+            button2.Text = "右";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(734, 396);
+            button3.Name = "button3";
+            button3.Size = new Size(54, 23);
+            button3.TabIndex = 8;
+            button3.Text = "加速";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(734, 425);
+            button4.Name = "button4";
+            button4.Size = new Size(54, 28);
+            button4.TabIndex = 9;
+            button4.Text = "減速";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
@@ -90,5 +114,7 @@
         private System.Windows.Forms.Timer timer1;
         private Button button1;
         private Button button2;
+        private Button button3;
+        private Button button4;
     }
 }
