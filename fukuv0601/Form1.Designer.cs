@@ -30,7 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             label1 = new Label();
-            textBox1 = new TextBox();
             timer1 = new System.Windows.Forms.Timer(components);
             button1 = new Button();
             button2 = new Button();
@@ -45,13 +44,6 @@
             label1.TabIndex = 4;
             label1.Text = "label1";
             label1.Click += label1_Click;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(418, 200);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(173, 23);
-            textBox1.TabIndex = 5;
             // 
             // timer1
             // 
@@ -85,7 +77,6 @@
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox1);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";

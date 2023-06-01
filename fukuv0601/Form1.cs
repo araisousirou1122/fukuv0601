@@ -25,7 +25,7 @@ namespace fukuv0601
 
         private void label1_Click(object sender, EventArgs e)
         {
-            timer1.Enabled=false;
+            timer1.Enabled = false;
             label1.Text = "araisoushirou";
         }
     }
