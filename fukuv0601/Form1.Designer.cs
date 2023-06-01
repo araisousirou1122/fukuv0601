@@ -38,7 +38,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(366, 185);
+            label1.Location = new Point(409, 433);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 4;
@@ -48,14 +48,13 @@
             // timer1
             // 
             timer1.Enabled = true;
-            timer1.Interval = 300;
             timer1.Tick += timer1_Tick;
             // 
             // button1
             // 
-            button1.Location = new Point(641, 362);
+            button1.Location = new Point(594, 419);
             button1.Name = "button1";
-            button1.Size = new Size(70, 86);
+            button1.Size = new Size(72, 29);
             button1.TabIndex = 6;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -63,9 +62,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(716, 362);
+            button2.Location = new Point(692, 419);
             button2.Name = "button2";
-            button2.Size = new Size(72, 86);
+            button2.Size = new Size(60, 29);
             button2.TabIndex = 7;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
